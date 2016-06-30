@@ -1,0 +1,25 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <base href="https://polygit.org/components/">
+  <script src="webcomponentsjs/webcomponents-lite.min.js"></script>
+  <link href="polymer/polymer.html" rel="import">
+</head>
+<body>
+
+  <dom-module id="__elementname__">
+    <template>
+      <style></style>
+      <h1>Hello from __elementname__</h1>
+    </template>
+    <script>
+      // Wait for imports in polyfilled browsers
+      HTMLImports.whenReady(function() {
+        Polymer({
+          is: '__elementname__'
+        });
+      });
+    </script>
+  </dom-module>
+  <__elementname__></__elementname__>
+</body>
